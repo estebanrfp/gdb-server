@@ -1,8 +1,8 @@
 {
   "name": "GraphDB Server",
   "description": "GraphDB Server, Javascript, Offline-First Javascript Graph Database Server Peer",
-  "website": "https://estebanrfp.github.io/gdb/",
-  "repository": "https://github.com/estebanrfp/gdb",
+  "website": "https://estebanrfp.github.io/gdb/gdb-server/",
+  "repository": "https://github.com/estebanrfp/gdb-server",
   "logo": "https://i.imgur.com/g2ngmgw.jpg",
   "keywords": ["node", "express", "static", "gdb", "GraphDB", "Graph", "database"],
   "env": {

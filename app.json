@@ -1,0 +1,16 @@
+{
+  "name": "GraphDB Server",
+  "description": "GraphDB Server, Javascript, Offline-First Javascript Graph Database Server Peer",
+  "website": "https://estebanrfp.github.io/gdb/",
+  "repository": "https://github.com/estebanrfp/gdb",
+  "logo": "https://i.imgur.com/g2ngmgw.jpg",
+  "keywords": ["node", "express", "static", "gdb", "GraphDB", "Graph", "database"],
+  "env": {
+    "GRAPHDB_ROOM": {
+      "description": "Room name to join",
+      "value": "todoList",
+      "required": true
+    }
+  },
+  "stack": "heroku-24"
+}

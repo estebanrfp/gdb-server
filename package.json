@@ -1,0 +1,47 @@
+{
+  "name": "gdb-server",
+  "version": "0.0.01",
+  "description": "Distributed GDB Server.",
+  "main": "GraphDBServer.js",
+  "type": "module",
+  "scripts": {
+    "start": "node GraphDBServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanrfp/gdb-server.git"
+  },
+  "keywords": [
+    "gdb",
+    "graph",
+    "database",
+    "realtime",
+    "decentralized",
+    "peer-to-peer",
+    "distributed",
+    "P2P",
+    "rbac"
+  ],
+  "author": {
+    "name": "Esteban Fuster Pozzi",
+    "email": "estebanrfp@gmail.com",
+    "url": "https://github.com/estebanrfp"
+  },
+  "license": "(Zlib OR MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/estebanrfp/gdb-server/issues"
+  },
+  "homepage": "https://github.com/estebanrfp/gdb-server#readme",
+  "engines": {
+    "node": "23.x",
+    "npm": "11.x"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "3.1.1",
+    "cors": "2.8.5",
+    "express": "5.1.0",
+    "pako": "2.1.0",
+    "trystero": "^0.21.1",
+    "webrtc-polyfill": "1.1.10"
+  }
+}

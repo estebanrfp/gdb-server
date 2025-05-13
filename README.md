@@ -1,4 +1,4 @@
-# GraphDB P2P Server Node
+# GraphDB Data Synchronization Server
 
 This repository contains the server-side implementation for a distributed graph database system. It acts as a **Persistent P2P Data Synchronization Node/Server**, enabling real-time data replication and consistency across a peer-to-peer network, with local file system persistence for data durability.
 

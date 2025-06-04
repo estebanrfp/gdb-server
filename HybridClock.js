@@ -1,3 +1,14 @@
+/**
+ * @typedef {Object} HLCTimestamp
+ * @property {number} physical - The physical time component, typically milliseconds since epoch.
+ * @property {number} logical - The logical counter component.
+ */
+
+/**
+ * Implements a Hybrid Logical Clock (HLC) for generating and managing causally ordered timestamps.
+ * HLCs combine physical time with a logical counter to provide a better ordering
+ * of events in distributed systems than physical timestamps alone.
+ */
 export class HybridClock {
   constructor() {
     this.physical = Date.now()
@@ -22,16 +33,6 @@ export class HybridClock {
     this.logical = Math.max(this.logical, remoteTimestamp.logical) + 1
   }
 
-  // compare (ts1, ts2) {
-  //   if (!ts1 && !ts2) return 0
-  //   if (!ts1) return -1
-  //   if (!ts2) return 1
-
-  //   if (ts1.logical > ts2.logical) return 1
-  //   if (ts1.logical < ts2.logical) return -1
-  //   return ts1.physical - ts2.physical
-  // }
-  // CÓDIGO CORREGIDO - compare
   compare(ts1, ts2) {
     if (!ts1 && !ts2) return 0
     if (!ts1) return -1
